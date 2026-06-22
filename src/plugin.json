@@ -1,0 +1,28 @@
+{
+  "$schema": "https://raw.githubusercontent.com/grafana/grafana/main/docs/sources/developers/plugins/plugin.schema.json",
+  "type": "datasource",
+  "name": "Keycloak",
+  "id": "keycloak-metrics-datasource",
+  "metrics": true,
+  "backend": true,
+  "executable": "gpx_keycloak",
+  "info": {
+    "description": "Visualise Keycloak Admin REST API metrics (users, events, sessions, roles, groups) via a secure Go backend.",
+    "author": {
+      "name": "Keycloak Datasource"
+    },
+    "keywords": ["datasource", "keycloak", "identity", "iam"],
+    "logos": {
+      "small": "img/logo.svg",
+      "large": "img/logo.svg"
+    },
+    "links": [],
+    "screenshots": [],
+    "version": "%VERSION%",
+    "updated": "%TODAY%"
+  },
+  "dependencies": {
+    "grafanaDependency": ">=11.0.0",
+    "plugins": []
+  }
+}
