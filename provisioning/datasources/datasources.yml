@@ -1,0 +1,19 @@
+apiVersion: 1
+
+# Example provisioning for the Keycloak datasource.
+# Replace the values below with your environment's Keycloak details.
+# The client secret lives in secureJsonData and is stored encrypted by Grafana.
+datasources:
+  - name: Keycloak
+    type: keycloak-metrics-datasource
+    access: proxy
+    isDefault: false
+    orgId: 1
+    version: 1
+    editable: true
+    jsonData:
+      baseUrl: https://keycloak.example.com
+      realm: master
+      clientId: grafana-ds
+    secureJsonData:
+      clientSecret: REPLACE_WITH_CLIENT_SECRET
